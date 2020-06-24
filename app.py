@@ -10,7 +10,7 @@ import os
 #part-prediction (moved from prediction.py)
 
 #import tensorflow as tf
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 import os
 import json
 import numpy as np
@@ -110,4 +110,4 @@ def uploaded_file(filename):
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(debug=False, threaded=False)
